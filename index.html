@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammadreza Aghababei | Backend Python Developer</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-primary: #c9d1d9;
+            --text-secondary: #8b949e;
+            --accent-color: #58a6ff;
+            --accent-hover: #79c0ff;
+            --border-color: #30363d;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-top: 10px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            color: var(--text-secondary);
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #ffffff;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .skill-category h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+
+        .skill-category ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            color: var(--text-secondary);
+        }
+
+        .skill-category li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .skill-category li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: #ffffff;
+        }
+
+        .project-card h3 a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .project-card h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tech-tag {
+            background: rgba(88, 166, 255, 0.1);
+            color: var(--accent-color);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-family: monospace;
+        }
+
+        .mini-projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .mini-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+            color: var(--text-secondary);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .skills-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Mohammadreza Aghababei</h1>
+            <div class="subtitle">Backend Python Developer</div>
+            <div class="contact-info">
+                📍 Isfahan, Iran <br>
+                📧 <a href="mailto:mohammadreza13842018@gmail.com">mohammadreza13842018@gmail.com</a> | 
+                📱 +98 916 293 9040 <br>
+                💻 <a href="https://github.com/mamarezak22" target="_blank">github.com/mamarezak22</a>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a self-taught backend developer and a final-year Computer Engineering student with a strong focus on Python frameworks, specifically Django and FastAPI. I am deeply passionate about technology, continuously exploring new tools, and tackling complex technical challenges. I operate with a strong problem-solving mindset and believe that no technical issue is truly unsolvable. I am a dedicated, persistent learner looking to bring my skills to a dynamic engineering team.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages & Frameworks</h3>
+                    <ul>
+                        <li>Python (Advanced)</li>
+                        <li>Django</li>
+                        <li>FastAPI</li>
+                        <li>RESTful API Design</li>
+                        <li>Shell Scripting</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases & Architecture</h3>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>Redis</li>
+                        <li>RabbitMQ</li>
+                        <li>Docker</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Concepts</h3>
+                    <ul>
+                        <li>Git (Advanced)</li>
+                        <li>Unit Testing</li>
+                        <li>ElasticSearch</li>
+                        <li>Problem Solving</li>
+                        <li>Critical Thinking</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            
+            <div class="project-card">
+                <h3><a href="https://github.com/mamarezak22/django-shop" target="_blank">Django Shop</a></h3>
+                <p>A robust backend for an e-commerce platform built with Django. Designed to handle product management, user authentication, and secure API endpoints for a seamless shopping experience.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">REST API</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3><a href="https://github.com/mamarezak22/quiz-of-geeks-api" target="_blank">Quiz of Geeks API</a></h3>
+                <p>A high-performance RESTful API powering a trivia and quiz application. Focused on fast data retrieval, efficient state management, and clean endpoint architecture.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">FastAPI / Django</span>
+                    <span class="tech-tag">API Design</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3><a href="https://github.com/mamarezak22/python-http-server" target="_blank">Simple Python HTTP Server</a></h3>
+                <p>A custom HTTP server built entirely from scratch in Python. This project demonstrates a deep, foundational understanding of network protocols, socket programming, and how web servers process requests under the hood.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Sockets</span>
+                    <span class="tech-tag">HTTP Protocols</span>
+                    <span class="tech-tag">Networking</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="mini-projects">
+            <h2>Other Projects</h2>
+            <p>Beyond backend architecture, I enjoy building logic-heavy applications and games to sharpen my Python and Object-Oriented Programming skills.</p>
+            <div class="mini-projects">
+                <div class="mini-card">Wordle Game</div>
+                <div class="mini-card">Blackjack</div>
+                <div class="mini-card">Unit Converter</div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="project-card">
+                <h3>Bachelor of Science in Computer Engineering</h3>
+                <p><strong>University of Ardakan</strong> | 2023 – Present (Expected Graduation: 2026/2027)</p>
+                <p>Currently in my final year of studies. Focusing heavily on backend architecture, software engineering principles, and self-directed learning in modern web technologies.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Mohammadreza Aghababei. Built with pure HTML & CSS.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
